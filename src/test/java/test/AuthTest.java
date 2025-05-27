@@ -62,6 +62,6 @@ public class AuthTest {
         back();
         loginPage.validLogin(user);
         String verificationCode = getVerificationCode();
-        verificationPage.overLimitVerify(verificationCode, limitMsg);
+        verificationPage.invalidVerify(verificationCode, limitMsg);
     }
 }
