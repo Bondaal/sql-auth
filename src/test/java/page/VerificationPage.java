@@ -31,11 +31,4 @@ public class VerificationPage {
                 .shouldBe(visible)
                 .shouldHave(text(textMsg));
     }
-
-    public void overLimitVerify(String verificationCode, String limitMsg) {
-        verify(verificationCode);
-        errorMsg
-                .shouldBe(visible)
-                .shouldHave(text(limitMsg));
-    }
 }
